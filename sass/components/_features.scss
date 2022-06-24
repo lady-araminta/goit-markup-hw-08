@@ -1,0 +1,47 @@
+.features {
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
+.features__list {
+    display: flex;
+}
+
+.features__item {
+    width: 270px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    &::before {
+        content: '';
+        display: block;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--team-background-color);
+        margin-bottom: 30px;
+    }
+}
+@each $pictures in 
+antenna,
+clock,
+diagram,
+astronaut {
+    .#{$pictures}::before {
+        content: '';
+        background-image: url('../images/#{$pictures}.svg');
+    }
+}
+
+.features__title {
+    color: var(--title-text-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+}
+
+.features__text {
+    line-height: 1.71;
+}

@@ -1,0 +1,24 @@
+.main {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/main-background.jpg);
+    background-position: center;
+    background-color: #c4c4c4;
+}
+.main__title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -1,0 +1,40 @@
+.our-projects {
+    padding-top: 47px;
+    padding-bottom: 94px;
+}
+
+.our-projects__list {
+    display: flex;
+}
+
+.our-projects__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.our-projects__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.our-projects__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.our-projects__label {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+}

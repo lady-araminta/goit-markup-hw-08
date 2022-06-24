@@ -1,0 +1,15 @@
+.section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.projects-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.projects-filter__item:not(:last-child) {
+    margin-right: 8px;
+}
+
