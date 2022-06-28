@@ -1,6 +1,10 @@
 .our-projects {
     padding-top: 47px;
     padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .our-projects__list {

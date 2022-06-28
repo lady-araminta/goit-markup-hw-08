@@ -1,8 +1,10 @@
+@import "./utils/breakpoints";
 @import "./utils/variables";
 @import "./utils/reset";
 @import "./utils/base";
 @import "./components/header";
 @import "./components/logo";
+@import "./components/menu";
 @import "./components/main-section";
 @import "./components/buttons";
 @import "./components/features";

@@ -1,16 +1,25 @@
 .features {
-    padding-top: 94px;
-    padding-bottom: 47px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 47px;
+    }
 }
-
 .features__list {
-    display: flex;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: $tablet) {
+        margin: -15px;
+    }
 }
 
 .features__item {
-    width: 270px;
+    width: 100%;
     &:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
     &::before {
         content: '';
@@ -21,18 +30,26 @@
         background-color: var(--team-background-color);
         margin-bottom: 30px;
     }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+    }
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 4 * 30px) / 4);
+        margin: 15px;
+    }
 }
+
 @each $pictures in 
 antenna,
 clock,
 diagram,
 astronaut {
-    .#{$pictures}::before {
+    .#{$pictures}-icon::before {
         content: '';
-        background-image: url('../images/#{$pictures}.svg');
+        background-image: url('/images/#{$pictures}.svg');
     }
 }
-
 .features__title {
     color: var(--title-text-color);
     text-transform: uppercase;
@@ -40,6 +57,10 @@ astronaut {
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+        text-align: left;
+    }
 }
 
 .features__text {

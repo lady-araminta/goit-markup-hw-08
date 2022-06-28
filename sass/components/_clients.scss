@@ -1,19 +1,39 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 47px;
+    }
 }
 
 .clients__list {
     display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: $tablet) {
+        margin: -15px;
+    }
 }
 
 .clients__item {
-    width: 170px;
-    height: 92px;
-    &:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (max-width: 767px) {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+        height: 92px;
     }
-}
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% - 3 * 30px) / 3);
+        margin: 15px;
+        height: 92px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 6 * 30px) / 6);
+        margin: 15px;
+        height: 92px;
+    }
+ }
 
 .clients__link {
     display: flex;

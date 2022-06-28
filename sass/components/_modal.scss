@@ -9,6 +9,7 @@
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -21,8 +22,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: var(--main-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -34,6 +35,10 @@
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.9);
         opacity: 0;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 528px;
+        height: 581px;
     }
 }
 
@@ -136,8 +141,8 @@
 
 .check {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .check__icon {
@@ -156,15 +161,16 @@
         background-position: center;
     }
 }
-
+.check__text {
+    font-size: 12px;
+    line-height: 1.17;
+    color: var(--primary-text-color);
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
 .check__link {
     text-decoration: underline;
     color: var(--accent-color);
-}
-
-.check__text {
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--primary-text-color);
-    margin-right: 2px;
 }
