@@ -40,24 +40,14 @@
     }
 }
 
-.antenna-icon::before {
-    content: '';
-    background-image: url(/images/antenna.svg);
-}
-
-.clock-icon::before {
-    content: '';
-    background-image: url(/images/clock.svg);
-}
-
-.diagram-icon::before {
-    content: '';
-    background-image: url(/images/diagram.svg);
-}
-
-.astronaut-icon::before {
-    content: '';
-    background-image: url(/images/astronaut.svg);
+@each $pictures in antenna,
+clock,
+diagram,
+astronaut {
+    .#{$pictures}-icon::before {
+        content: '';
+        background-image: url(/images/#{$pictures}.svg);
+    }
 }
 
 .features__title {
