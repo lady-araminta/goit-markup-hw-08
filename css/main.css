@@ -364,22 +364,22 @@ body {
 
 .antenna-icon::before {
   content: "";
-  background-image: url("/images/antenna.svg");
+  background-image: url(/images/antenna.svg);
 }
 
 .clock-icon::before {
   content: "";
-  background-image: url("/images/clock.svg");
+  background-image: url(/images/clock.svg);
 }
 
 .diagram-icon::before {
   content: "";
-  background-image: url("/images/diagram.svg");
+  background-image: url(/images/diagram.svg);
 }
 
 .astronaut-icon::before {
   content: "";
-  background-image: url("/images/astronaut.svg");
+  background-image: url(/images/astronaut.svg);
 }
 
 .features__title {
