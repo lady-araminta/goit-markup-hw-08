@@ -7,11 +7,26 @@ body {
 }
 
 .container {
-    width: 1200px;
+    outline: 1px solid teal;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    @media screen and (max-width: 479px) {
+        max-width: $mobile;
+    }
+    
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
 }
 
 .visually-hidden {

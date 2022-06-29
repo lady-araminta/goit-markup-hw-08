@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <div class="container">
             <nav class="nav">
                 <a href="/" class="logo logo__header"><span class="logo__accent">Web</span>Studio</a>
@@ -44,11 +44,10 @@
                 </li>
             </ul>
         </div>
-    </header>
+    </header> -->
     <main>
         <section class="section-portfolio">
             <div class="container">
-            <!--неотображаемый заголовок-->
             <h1 class="visually-hidden">Список проектов</h1>
             <ul class="projects-filter">
                 <li class="projects-filter__item"><button type="button" class="projects-filter__btn">Все</button></li>
@@ -67,7 +66,7 @@
                             <img class="thumb__img" src="./images/project-1.jpg" alt="Веб-сайт Технокряк" width="370">
                             <p class="thumb__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
-                        <div class="description">
+                        <div class="description description--tech">
                             <h2 class="description__title">Технокряк</h2>
                             <p class="description__category">Веб-сайт</p>
                         </div>
@@ -191,50 +190,54 @@
     </main>
     <footer class="footer" id="footer">
         <div class="container footer__container">
-            <div class="footer-connect">
-                <a href="/" class="logo logo__footer"><span class="logo__accent">Web</span>Studio</a>
-                <address>
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <p class="footer__text">г. Киев, пр-т Леси Украинки, 26</p>
-                        </li>
-                        <li class="footer__item"><a href="mailto:info@example.com" class="footer__link">info@example.com</a>
-                        </li>
-                        <li class="footer__item"><a href="tel:+380991111111" class="footer__link">+38 099 111 11 11</a></li>
+            <div class="footer__tablet">
+                <div class="footer-connect">
+                    <a href="/" class="logo logo__footer"><span class="logo__accent">Web</span>Studio</a>
+                    <address>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <p class="footer__text">г. Киев, пр-т Леси Украинки, 26</p>
+                            </li>
+                            <li class="footer__item"><a href="mailto:info@example.com"
+                                    class="footer__link">info@example.com</a></li>
+                            <li class="footer__item"><a href="tel:+380991111111" class="footer__link">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="join">
+                    <p class="footer-title">Присоединяйтесь</p>
+                    <ul class="social social--footer">
+                        <li class="social__item"><a href="" class="social__link">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social__item"><a href="" class="social__link">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social__item"><a href="" class="social__link">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social__item"><a href="" class="social__link">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a></li>
                     </ul>
-                </address>
-            </div>
-            <div class="join">
-                <p class="footer-title">Присоединяйтесь</p>
-                <ul class="social">
-                    <li class="social__item"><a href="" class="social__link">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a></li>
-                    <li class="social__item"><a href="" class="social__link">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a></li>
-                    <li class="social__item"><a href="" class="social__link">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a></li>
-                    <li class="social__item"><a href="" class="social__link">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a></li>
-                </ul>
+                </div>
             </div>
             <div class="subscribe">
                 <p class="footer-title">Подпишитесь на рассылку</p>
                 <form name="subscribe-form">
-                    <label for="subscribe-email" class="subscribe__label"></label>
-                    <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Email"
-                        class="subscribe__input">
+                    <label for="subscribe-email" class="subscribe__label">
+                        <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Email"
+                            class="subscribe__input">
+                    </label>
                     <button class="subscribe__btn" type="submit">
                         <span class="subscribe__text">Подписаться</span>
                         <svg class="subscribe__icon" width="24" height="24">

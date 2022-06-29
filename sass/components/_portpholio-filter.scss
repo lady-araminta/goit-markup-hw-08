@@ -1,15 +1,35 @@
 .section-portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-top: 94px;
+    }
 }
 
 .projects-filter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+        margin-top: -15px;
+        margin-right: -8px;
+    }
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
 }
 
-.projects-filter__item:not(:last-child) {
-    margin-right: 8px;
+.projects-filter__item {
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+    @media screen and (max-width: 767px) {
+        margin-top: 15px;
+    }
 }
 
