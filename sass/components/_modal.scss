@@ -30,14 +30,17 @@
     transition-property: transform, opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.9);
         opacity: 0;
     }
+
     @media screen and (min-width: $mobile) {
         width: 450px;
         height: 609px;
     }
+
     @media screen and (min-width: $desktop) {
         width: 528px;
         height: 581px;
@@ -65,7 +68,6 @@
         fill: var(--accent-color);
     }
 }
-
 .form {
     width: 100%;
     padding: 40px;
