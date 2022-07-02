@@ -46,7 +46,7 @@ diagram,
 astronaut {
     .#{$pictures}-icon::before {
         content: '';
-        background-image: url(/images/#{$pictures}.svg);
+        background-image: url(../images/#{$pictures}.svg);
     }
 }
 
