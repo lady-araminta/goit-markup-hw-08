@@ -51,6 +51,11 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (max-width: 479px) {
+  .container {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -146,7 +151,7 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: 0;
   width: 100%;
   height: 4px;
   background-color: var(--accent-color);
@@ -154,8 +159,8 @@ body {
 }
 
 .connect {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   margin-left: 75px;
 }
 @media screen and (max-width: 767px) {
@@ -193,6 +198,11 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .connect__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .connect__item:not(:last-child) {
     margin-right: 50px;
@@ -346,7 +356,7 @@ body {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-align: center;
-  width: 360px;
+  max-width: 360px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -691,7 +701,7 @@ body {
 @media screen and (min-width: 1200px) {
   .clients {
     padding-top: 94px;
-    padding-bottom: 47px;
+    padding-bottom: 94px;
   }
 }
 
@@ -849,7 +859,6 @@ body {
 }
 
 .subscribe__input {
-  min-width: 358px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -866,6 +875,16 @@ body {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 320px) {
+  .subscribe__input {
+    min-width: 290px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscribe__input {
+    width: 450px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .subscribe__input {
     margin-bottom: 20px;
@@ -874,6 +893,7 @@ body {
 @media screen and (min-width: 1200px) {
   .subscribe__input {
     margin-right: 12px;
+    min-width: 358px;
   }
 }
 
@@ -959,7 +979,13 @@ body {
   }
 }
 
+.product--tech {
+  height: 100%;
+}
+
 .product__link {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -1002,16 +1028,11 @@ body {
 }
 
 .description {
+  flex-grow: 1;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  padding-left: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.description--tech {
-  flex-grow: 1;
+  padding: 20px 24px;
 }
 
 .description__title {
@@ -1320,6 +1341,7 @@ body {
 
 .header-social {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .header-social__item:not(:first-child) {

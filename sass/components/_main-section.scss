@@ -60,7 +60,7 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-align: center;
-    width: 360px;
+    max-width: 360px;
     margin-right: auto;
     margin-left: auto;
     @media screen and (min-width: $desktop) {

@@ -20,8 +20,13 @@
     }
     
 }
+.product--tech {
+    height: 100%;
+}
 
 .product__link {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -67,15 +72,11 @@
 }
 
 .description {
+    flex-grow: 1;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
-    padding-left: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.description--tech {
-    flex-grow: 1;
+    padding: 20px 24px;
 }
 
 .description__title {
