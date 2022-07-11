@@ -1021,8 +1021,14 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.product__link:hover .thumb__overlay, .product__link:focus .thumb__overlay {
+.project__link:hover .thumb__overlay, .project__link:focus .thumb__overlay {
   transform: translateY(0);
+}
+@media screen and (max-width: 479px) {
+  .thumb__overlay {
+    padding: 20px 24px;
+    font-size: 14px;
+  }
 }
 
 .description {

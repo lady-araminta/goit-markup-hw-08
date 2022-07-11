@@ -61,9 +61,13 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    .product__link:hover &,
-    .product__link:focus & {
+    .project__link:hover &,
+    .project__link:focus & {
         transform: translateY(0);
+    }
+    @media screen and (max-width: 479px) {
+        padding: 20px 24px;
+        font-size: 14px;
     }
 }
 
